@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<infolist>
+
+  <version>2.0.0</version>
+
+  <info uuid="4ea97240ae-0048-8b8e-dc47-0df48d21f7">
+    <datalist key="systemtag">
+      <data id="">Resizable</data>
+      <data id="">BrushPattern</data>
+    </datalist>
+    <datalist key="foldertag">
+      <data id="">画像素材:ブラシ</data>
+    </datalist>
+    <datalist key="scaling">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="isTiling">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="howTiling">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="directionTiling">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="superPosition">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="tone">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="toneLines">
+      <data id="">60.000000</data>
+    </datalist>
+    <datalist key="concentrationType">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="concentration">
+      <data id="">20.000000</data>
+    </datalist>
+    <datalist key="toneKind">
+      <data id="">1</data>
+    </datalist>
+    <datalist key="toneAngle">
+      <data id="">45.000000</data>
+    </datalist>
+    <datalist key="noizeSize">
+      <data id="">10.000000</data>
+    </datalist>
+    <datalist key="noizeCoefficient">
+      <data id="">0.000000</data>
+    </datalist>
+    <datalist key="useLayerColor">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="mainColorRed">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="mainColorGreen">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="mainColorBlue">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="subColorRed">
+      <data id="">4294967295</data>
+    </datalist>
+    <datalist key="subColorGreen">
+      <data id="">4294967295</data>
+    </datalist>
+    <datalist key="subColorBlue">
+      <data id="">4294967295</data>
+    </datalist>
+    <datalist key="isChangeThumbnail">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="isChangeTitle">
+      <data id="">0</data>
+    </datalist>
+    <datalist key="csauuid">
+      <data id=""></data>
+    </datalist>
+  </info>
+
+</infolist>

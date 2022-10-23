@@ -1,0 +1,345 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  ClearFIX */
+
+.cf:before, 
+.cf:after {
+    content: " "; /* 1 */ 
+    display: table; /* 2 */ 
+} 
+.cf:after { 
+    clear: both; 
+}
+.cf { 
+    *zoom: 1; 
+}
+
+/* style */
+body {
+    background-color: rgb(31, 31, 31);
+    overflow-x :hidden; 
+}
+
+/* navigasi */
+.navigasi {
+    position: relative;
+    top: 160px;
+    left: 350px;
+}
+.direct ul li{
+    position: relative;
+    display: inline-block;
+    padding: 0 25px;
+    
+}
+.direct a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    transition-duration: .4s;
+}
+.direct li:hover a{
+    color: rgb(154, 225, 253);
+    font-size: 20px;
+    transition-duration: .4s; 
+}
+.navbg {
+    position: absolute;
+    top: 150px;
+    background: linear-gradient(90deg,#ffd00010,#37c0f73f,#ffe60010);
+    width: 100%;
+    height: 40px;
+}
+.onit {
+    border-bottom: 1px solid #ffffff75;
+}
+
+/* Gambar Utama background */
+.mainbg img{
+    position: fixed;
+    top: -22vh;
+    left: -10vh;
+    width: 105%;
+    z-index: -1;
+    opacity: .15;
+}
+/* Gambar logo */
+.logosmk {
+    position: absolute;
+    top: 20px;
+    left: 420px;
+    width: 110px;
+}
+.lsmkafter {
+    color: rgb(240, 209, 72);
+    position: relative;
+    top: 0px;
+    left: 550px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.lsmkbefore {
+    color: rgb(104, 193, 228);
+    position: relative;
+    top: -3px;
+    left: 550px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: default;
+}
+/* .official {
+    color: rgba(255, 255, 255, 0.664);
+    position: relative;
+    top: -45px;
+    left: 930px;
+    font-size: 12px;
+    cursor: default;
+}.officialb {
+    color: rgba(255, 255, 255, 0.664);
+    position: relative;
+    top: -40px;
+    left: 930px;
+    font-size: 16px;
+    cursor: default;
+} */
+
+
+/* Main container */
+.maincontainer {
+    position: absolute;
+    top: 220px;
+    left: 120px;
+
+    width: 1100px;
+    height: 1700px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.479) 10px 10px 10px;
+}
+
+
+/* inner */
+/* Field 1 */
+.motiv1 {
+    position: absolute;
+    top: 300px;
+    left: 210px;
+
+    width: 450px;
+    height: 105px;
+    background-color: rgb(35, 212, 243);
+
+    box-shadow: rgba(0, 0, 0, 0.37) 2px 6px 20px;
+    
+    z-index: 1;
+    border-bottom: 7px solid rgb(26, 190, 255);
+}
+.motiv2 {
+    position: absolute;
+    top: 340px;
+    left: 275px;
+
+    width: 800px;
+    height: 700px;
+    background-color: rgba(231, 208, 1, 0.329);
+    border-left: 10px solid rgba(255, 219, 14, 0.39);
+    opacity: .8;
+
+    z-index: 0;
+
+}
+.motiv3 {
+    position: absolute;
+    top: 300px;
+    left: 205px;
+
+    width: 460px;
+    height: 115px;
+    background-color: rgba(35, 184, 243, 0.336);
+
+    transform: rotate(5deg);
+    z-index: 0;
+
+}
+.tentang1 {
+    position: absolute;
+    top: 310px;
+    left: 230px;
+
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(7, 83, 146, 0.459) 2px 4px 5px;
+    z-index: 1;
+
+}
+.tentang2 {
+    position: absolute;
+    top: 345px;
+    left: 240px;
+
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(3, 45, 85, 0.459) 2px 4px 7px;
+    z-index: 1;
+
+}
+.note1 {
+    
+    position: absolute;
+    top: 470px;
+    left: 600px;
+
+    font-size: 30px;
+    color: rgb(83, 83, 83);
+    text-shadow: rgba(3, 45, 85, 0.459) 2px 4px 7px;
+    z-index: 1;
+}
+.note2 {
+    
+    position: absolute;
+    top: 560px;
+    left: 440px;
+
+    font-size: 22px;
+    width: 500px;
+    text-align: justify;
+    color: rgb(83, 83, 83);
+    text-shadow: rgba(3, 45, 85, 0.459) 2px 4px 7px;
+    z-index: 1;
+}
+
+
+
+
+
+/* field 2 */
+.motiv1b {
+    position: absolute;
+    top: 1100px;
+    left: 710px;
+
+    width: 450px;
+    height: 105px;
+    background-color: rgb(35, 212, 243);
+
+    box-shadow: rgba(0, 0, 0, 0.37) 2px 6px 20px;
+    
+    z-index: 1;
+    border-bottom: 7px solid rgb(26, 190, 255);
+}
+.motiv2b {
+    position: absolute;
+    top: 1150px;
+    left: 275px;
+
+    width: 800px;
+    height: 700px;
+    background-color: rgba(231, 208, 1, 0.329);
+    border-left: 10px solid rgba(255, 219, 14, 0.39);
+    opacity: .8;
+
+    z-index: 0;
+
+}
+.motiv3b {
+    position: absolute;
+    top: 1100px;
+    left: 705px;
+
+    width: 460px;
+    height: 115px;
+    background-color: rgba(35, 184, 243, 0.336);
+
+    transform: rotate(5deg);
+    z-index: 0;
+
+}
+.tentang1b {
+    position: absolute;
+    top: 1110px;
+    left: 730px;
+
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(7, 83, 146, 0.459) 2px 4px 5px;
+    z-index: 1;
+
+}
+.tentang2b {
+    position: absolute;
+    top: 1145px;
+    left: 825px;
+
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-shadow: rgba(3, 45, 85, 0.459) 2px 4px 7px;
+    z-index: 1;
+
+}
+.note1b {
+    
+    position: absolute;
+    top: 1270px;
+    left: 600px;
+
+    font-size: 30px;
+    color: rgb(83, 83, 83);
+    text-shadow: rgba(3, 45, 85, 0.459) 2px 4px 7px;
+    z-index: 1;
+}
+.note2b {
+    
+    position: absolute;
+    top: 1360px;
+    left: 440px;
+
+    font-size: 22px;
+    width: 500px;
+    text-align: justify;
+    color: rgb(83, 83, 83);
+    text-shadow: rgba(3, 45, 85, 0.459) 2px 4px 7px;
+    z-index: 1;
+}

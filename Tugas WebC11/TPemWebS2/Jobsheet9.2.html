@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Jobsheet 9.2</title>
+        <script>
+            function hitung() {
+                var quis = parseInt(document.getElementById('quis').value);
+                var tugas = parseInt(document.getElementById('tugas').value);
+                var uts = parseInt(document.getElementById('uts').value);
+                var uas = parseInt(document.getElementById('uas').value);
+                var hasil = (quis * 10 / 100) + (tugas * 20 /100) + (uts * 30 / 100) + (uas * 40 / 100);
+                var ket;
+                var ip;
+                if(hasil >= 80){
+                    ip = "A";
+                    ket = "Sangat baik";
+                }else if(hasil >= 70 && hasil < 80){
+                    ip = "B";
+                    ket = "Baik";
+                }else if(hasil >= 55 && hasil < 70){
+                    ip = "C";
+                    ket = "Cukup";
+                }else if(hasil >= 38 && hasil < 55){
+                    ip = "D";
+                    ket = "Kurang";
+                }else if(hasil < 38){
+                    ip = "E";
+                    ket = "Tidak Lulus";
+                }
+
+                document.getElementById("ket").innerHTML="Keterangan : " + ket;
+                document.getElementById("ip").innerHTML=ip;
+             }
+             function ulang() {
+                 document.getElementById('ip').innerHTML="";
+                 document.getElementById('quis').value="";
+                 document.getElementById('tugas').value="";
+                 document.getElementById('uts').value="";
+                 document.getElementById('uas').value="";
+                 document.getElementById('ket').innerHTML="";
+             }
+        </script>
+        <style>
+            body {
+                background-color: rgb(14, 158, 255);
+            }
+            table {
+                position: relative;
+                left: 300px;
+                top: 100px;
+                background-color: aqua;
+                padding: 50px;
+                border-radius: 40px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="4">
+                    <h1>Menghitung Index Prestasi</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>Quis (10%) :<br><input type="text" id="quis"></td> 
+                <td>Tugas (20%) :<br><input type="text" id="tugas"></td>
+                <td>UTS (30%) :<br><input type="text" id="uts"></td>
+                <td>UAS (40%) :<br><input type="text" id="uas"></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="button" id="hitung" value="Hitung" onclick="hitung()">
+                    
+                    <input type="button" id="ulang" value="Ulang" onclick="ulang()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>Index prestasi : </p>
+                </td>
+                <td><u><b><p id="ip"></p></b></u></td>
+
+            </tr>
+            <tr><td>
+                <p id="ket">Keterangan :</p></td>
+            </tr>
+        </table>
+        
+        <br>
+        <a href="../TPemweb/jobsheet5.1.html">Back</a>
+    </body>
+</html>

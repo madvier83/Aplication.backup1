@@ -1,0 +1,23 @@
+
+#include<iostream>
+using namespace std;
+int main()
+
+{
+	int uang;
+	cout<<"Masukan Jumlah Uaang : ";
+	cin>>uang;
+	
+	int seribu = uang/1000;
+	uang = uang%1000;
+	int lira = uang/500;
+	uang = uang%500;
+	int seratus = uang/100;
+	uang = uang%100;
+	int lipu = uang/50;
+	uang = uang%50;
+	int duli = uang/25;
+	uang = uang%25;
+	
+	cout<<seribu<<" Seribuan"<<lira<<" Limaratusan"<<seratus<<" Seratusan "<<lipu<<" Limapuluhan "<<duli<<" Duapuluhlimaan "<<endl
+}

@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Jobsheet 10.2</title>
+        <style>
+            .btn {
+                position: absolute;
+                left: 570px ;
+                top: 250px;
+                width: 100px;
+                height: 30px;
+            }
+            body {
+                background-color: #ccc;
+            }
+            #pass {
+                background-color: #fff;
+                font-family: century gothic;
+                width: 180px;
+                height: 75px;
+                font-size: 25px;
+                transition-duration: .3s;
+            }
+            #pass:hover {    
+                color: #ffffff;
+                background-color: #333;
+                transition-duration: .3s;
+            }
+        </style>
+        <script>
+            function password() { 
+
+                    var a = prompt("Masukan Password Dengan Benar");
+                    var b = "benar";
+                    var i = 1;
+
+                    if (a == undefined){
+                        alert("Lemah");
+                    }
+                    else if (a == b) {
+                        alert("Password benar");
+                        this.history.back(-1);
+                    }else{
+                        do{
+                            var a = prompt("Password Salah, Coba cek kembali");
+                            i++;
+                            if (a == b) {
+                                alert("Password benar");
+                                this.history.back(-1);
+                            }
+                        }while(a != b && i<3)                        
+                    }
+                    if(i = 3 && a != b) {
+                        alert("Kesempatan Sudah Habis (3)");
+                    }
+
+            }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="password" id="pass" onclick="password()" class="btn">
+        
+        <br>
+        <a href="../TPemweb/jobsheet5.1.html">Back</a>
+    </body>
+</html>

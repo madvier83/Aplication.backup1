@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>Jobsheet 7</title>
+        <script type="text/javascript">
+            function jumlah() {
+                var a = parseInt(document.getElementById('r').value);
+                var hasil = 3.14 * a * a;
+                document.getElementById('hasil').value=hasil;
+            }
+
+            function hitungv() {
+                var r = parseInt(document.getElementById('k').value);
+                var t = parseInt(document.getElementById('l').value);
+                var vol = 3.14 * r * r * t;
+                document.getElementById('volume').value=vol;
+             }
+            function mean() {
+                //set
+                var a = parseInt(document.getElementById('a').value);
+                var b = parseInt(document.getElementById('b').value);
+                var c = parseInt(document.getElementById('c').value);
+                var d = parseInt(document.getElementById('d').value);
+                var e = parseInt(document.getElementById('e').value);
+                var f = parseInt(document.getElementById('f').value);
+                var g = parseInt(document.getElementById('g').value);
+                var h = parseInt(document.getElementById('h').value);
+                var i = parseInt(document.getElementById('i').value);
+                var j = parseInt(document.getElementById('j').value);
+                var mean = (a + b + c + d + e + f + g + h + i + j) / 10;
+                document.getElementById('mean').value=mean;
+            }
+        </script>
+        <style>
+            .table {
+                width: 500px;
+                height: 80px;
+
+            }
+            .tip {
+                width: 50px;
+                height: 50px;
+            }
+
+
+            body {
+                background-color: #444;
+                color: #fff;
+            }
+            .baga {
+                background-color: #888;
+                padding: 20px;
+            }
+            .bagb {
+                background-color: #777;
+                padding: 20px;
+            }
+            .bagc {
+                background-color: #666;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="baga">
+
+        <h1>Luas Lingkaran</h1>
+        <input type="text" id="r" placeholder="panjang rusuk"><br>
+        <input type="text" disabled id="hasil" placeholder="hasil"><br>
+        <input type="button" value="Hitung" onclick="jumlah()">
+        </div>
+        
+        <div class="bagb">
+        <h1>Volume Tabung</h1>
+        <input type="text" id="k" placeholder="panjang rusuk"><br>
+        <input type="text" id="l" placeholder="tinggi tabung"><br>
+        <input type="text" id="volume" placeholder="hasil" disabled><br>
+        <input type="button" value="Hitung" onclick="hitungv()">
+        </div>
+
+        
+        <div class="bagc">
+        <h1>Rata Rata Bilangan</h1>
+
+        <table class="table" border="0">
+            <tr>
+                <td>
+                        <input class="tip" type="text" id="a" placeholder="Bil 1"></td>
+                <td>
+                        <input class="tip" type="text" id="b" placeholder="Bil 2"></td>
+                <td>
+                        <input class="tip" type="text" id="c" placeholder="Bil 3"></td>
+                <td>
+                        <input class="tip" type="text" id="d" placeholder="Bil 4"></td>
+                <td>
+                        <input class="tip" type="text" id="e" placeholder="Bil 5"></td>
+                <td>
+                        <input class="tip" type="text" id="f" placeholder="Bil 6"></td>
+                <td>
+                        <input class="tip" type="text" id="g" placeholder="Bil 7"></td>
+                <td>
+                        <input class="tip" type="text" id="h" placeholder="Bil 8"></td>
+                <td>
+                        <input class="tip" type="text" id="i" placeholder="Bil 9"></td>
+                <td>
+                        <input class="tip" type="text" id="j" placeholder="Bil 10"></td>
+            </tr>
+        
+            
+            <tr>
+                <td colspan="10">
+                        <input disabled type="text" id="mean" placeholder="hasil">
+                        <input type="button" value="Rata Ratakan" onclick="mean()">
+                    </td>
+            </tr>
+            
+        </table></div>
+        
+        <br>
+        <a href="../TPemweb/jobsheet5.1.html">Back</a>
+    </body>
+</html>

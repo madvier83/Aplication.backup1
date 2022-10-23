@@ -1,0 +1,6 @@
+D:\New Program\TugasArray Nilai Mahasiswa\TugasArray Nilai Mahasiswa\bin\Debug\TugasArray Nilai Mahasiswa.exe.config
+D:\New Program\TugasArray Nilai Mahasiswa\TugasArray Nilai Mahasiswa\bin\Debug\TugasArray Nilai Mahasiswa.exe
+D:\New Program\TugasArray Nilai Mahasiswa\TugasArray Nilai Mahasiswa\bin\Debug\TugasArray Nilai Mahasiswa.pdb
+D:\New Program\TugasArray Nilai Mahasiswa\TugasArray Nilai Mahasiswa\obj\Debug\TugasArray Nilai Mahasiswa.csprojResolveAssemblyReference.cache
+D:\New Program\TugasArray Nilai Mahasiswa\TugasArray Nilai Mahasiswa\obj\Debug\TugasArray Nilai Mahasiswa.exe
+D:\New Program\TugasArray Nilai Mahasiswa\TugasArray Nilai Mahasiswa\obj\Debug\TugasArray Nilai Mahasiswa.pdb

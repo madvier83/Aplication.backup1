@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<infolist>
+
+  <version>2.0.0</version>
+
+  <info uuid="df02fe5317-d048-33bf-f9ff-aef13d021f">
+    <datalist key="lead">
+      <data></data>
+    </datalist>
+    <datalist key="tag">
+      <data>単色</data>
+      <data>シームレス</data>
+      <data>テクスチャ</data>
+      <data>IllustStudio収録</data>
+      <data>単色パターン</data>
+    </datalist>
+    <datalist key="updateHistory">
+      <data></data>
+    </datalist>
+  </info>
+
+</infolist>

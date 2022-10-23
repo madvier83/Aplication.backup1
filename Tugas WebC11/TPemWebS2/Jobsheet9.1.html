@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Jobsheet 9</title>
+        <style>
+            .main {
+                position: relative;
+                left: 500px;
+                top: 100px;
+                background-color: aqua;
+                width: 250px;
+                height: 100px;
+                border-radius: 20px;
+                padding: 30px;
+            }
+        </style>
+        <script>
+            function cari() {
+                var a = parseInt(document.getElementById('num').value);
+                switch(a){
+                    case 1 :alert("Januari");
+                    break;
+
+                    case 2 :alert("Febuari");
+                    break;
+                   
+                    case 3 :alert("Maret");
+                    break;
+
+                    case 4 :alert("April");
+                    break;
+                    
+                    case 5 :alert("Mei");
+                    break;
+
+                    case 6 :alert("Juni");
+                    break;
+
+                    case 7 :alert("Juli");
+                    break;
+
+                    case 8 :alert("Agustus");
+                    break;
+                    
+                    case 9 :alert("September");
+                    break;
+
+                    case 10 :alert("Oktober");
+                    break;
+                    
+                    case 11 :alert("November");
+                    break;
+
+                    case 12 :alert("Desember");
+                    break;
+                    
+                    default: alert("Nomor Tidak Sesuai");
+                    break;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="main">
+        <h2>Urutan Bulan (1-12)</h2>
+        <input type="text" id="num" placeholder="Urutan Bulan">
+        <input type="button" value="Cari" onclick="cari()">
+        <p id="hasil"></p>
+        </div>
+        <br>
+        <a href="../TPemweb/jobsheet5.1.html">Back</a>
+    </body>
+</html>

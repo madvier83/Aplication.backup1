@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Jobsheet11.4</title>
+        <script>
+            function hitung() {
+                var r = parseFloat(document.getElementById('r').value);
+                var luas = Math.PI * Math.pow(r,2);
+
+                document.getElementById('hasil').innerHTML = "Hasilnya = " + luas;  
+            }
+        </script>
+        
+        <style>
+                body {
+                    background-color: #444;
+                }
+                td {
+                    padding: 0 25px;
+                    color: #fff;
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    position: relative;
+                    top: 8px;
+                }
+                .back {
+                    background-color: #111;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 30px;
+                    width: 208vh;
+                    height: 100px;
+                    position: relative;
+                    top: -10px;
+                    left: -9px;
+                    border: none;
+                    padding: 0;
+                }
+                .hj {
+                    position: relative;
+                    top: 20px;
+                    font-size: 45px;
+                }
+                .navs {
+                    color: rgb(63, 63, 63);
+                    width: 50px;
+                    height: 30px;
+                    background-color: #eee;
+                    position: relative;
+                    top: -20px;
+                    left: 35px;
+                }
+                .main {
+                    position: absolute;
+                    left: 400px;
+                    width: 500px;
+                    height: 200px;
+                    background-color: #ccc;
+                    padding: 25px;
+                    border-radius: 20px;
+                }
+            td {
+                transition-duration: .5s;}
+            td:hover {
+                border-bottom: 2px #fff solid ;
+                padding-bottom: -20px;
+                font-size: 22px;
+                transition-duration: .5s;
+            }
+            </style>
+
+    </head>
+    <body>
+        
+            <div class="back">
+                    <table>
+                        <tr>
+                            <td><h1 class="hj">Jobsheet11.4</h1></td>
+                            <td><a href="./Jobsheet11.1.html">Jobsheet 11.1</a></td>
+                            <td><a href="./Jobsheet11.2.html">Jobsheet 11.2</a></td>
+                            <td><a href="./Jobsheet11.3.html">Jobsheet 11.3</a></td>
+                            <td><a href="./Jobsheet11.4.html">Jobsheet 11.4</a></td>
+                            <td><a href="./Jobsheet11.5.html">Jobsheet 11.5</a></td>
+                            <td><a href="./Jobsheet11.6.html">Jobsheet 11.6</a></td>
+                            <td><a href="./Jobsheet11.7.html">Jobsheet 11.7</a></td>
+                        </tr>
+                    </table></div><br>
+
+            <div>
+                    <a href="../../TPemweb/jobsheet5.1.html"><input type="button" value="Home" class="navs"></a>
+                        
+                    <a href=".././Jobsheet11all/Jobsheet11.3.html"><input type="button" value="Back" class="navs"></a>
+                        
+                    <a href=".././Jobsheet11all/Jobsheet11.5.html"><input type="button" value="Next" class="navs"></a>
+            </div>
+            <br>
+            <div class="main">
+        <input type="text" placeholder="Jari Jari" id="r">
+        <input type="button" value="Hitung" onclick="hitung()"><br>
+        <p id="hasil">Hasilnya = </p>
+    </div>
+    </body>
+</html>

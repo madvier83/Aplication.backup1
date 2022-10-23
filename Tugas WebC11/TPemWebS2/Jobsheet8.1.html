@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Jobsheet 8</title>
+        <script>
+            function cari() {     
+            var arraypertama = ["Lamborghini","Ferrari","Audi","Bugatti","Citroen","Chevrolet","Jaguar","Mercedes Benz","BMW","Shelby"];
+            var a = parseInt(document.getElementById('a').value);
+            var b = arraypertama[a - 1];
+            document.getElementById('out').innerHTML=b;
+            }
+        </script>
+        <style>
+            .all {
+                position: relative;
+                left: 550px;
+                top: 100px;
+            }
+            .list {
+                position: relative;
+                text-align: center;
+                top: 70px;
+            }
+        </style>
+    </head>
+    <body>
+            <p class="list">["Lamborghini","Ferrari","Audi","Bugatti","Citroen","Chevrolet","Jaguar","Mercedes Benz","BMW","Shelby"]</p>
+        
+        <div class="all">
+            <input type="text" id="a" placeholder="Masukan Angka Urutan">
+        <input type="button" value="cari" onclick="cari()">
+        <p>Hasil Pencarian : </p><p id="out"></p></div>
+
+        
+        <br>
+        <a href="../TPemweb/jobsheet5.1.html">Back</a>
+    </body>
+</html>

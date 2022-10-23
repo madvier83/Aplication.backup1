@@ -1,0 +1,6 @@
+c:\users\hp\documents\visual studio 2015\Projects\ConsoleApplicationPengurutBilangan\ConsoleApplicationPengurutBilangan\bin\Debug\ConsoleApplicationPengurutBilangan.exe.config
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ConsoleApplicationPengurutBilangan\ConsoleApplicationPengurutBilangan\bin\Debug\ConsoleApplicationPengurutBilangan.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ConsoleApplicationPengurutBilangan\ConsoleApplicationPengurutBilangan\bin\Debug\ConsoleApplicationPengurutBilangan.pdb
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ConsoleApplicationPengurutBilangan\ConsoleApplicationPengurutBilangan\obj\Debug\ConsoleApplicationPengurutBilangan.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ConsoleApplicationPengurutBilangan\ConsoleApplicationPengurutBilangan\obj\Debug\ConsoleApplicationPengurutBilangan.exe
+C:\Users\HP\Documents\Visual Studio 2015\Projects\ConsoleApplicationPengurutBilangan\ConsoleApplicationPengurutBilangan\obj\Debug\ConsoleApplicationPengurutBilangan.pdb

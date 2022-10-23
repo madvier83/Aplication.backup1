@@ -1,0 +1,162 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            body {
+                background-color: rgb(31, 31, 31);
+            }
+            input[type="button"][class="normal"] {
+                width: 80px;
+                height: 70px;
+                background: none;
+                color: #fff;
+                border: none;
+                border-bottom: 2px solid #fff;
+                font-size: 40px;
+                font-family: century gothic;
+                transition-duration: 1s;
+            }
+            input[type="button"]:hover {
+                background-color: rgba(22, 89, 116, 0.651);
+                transition-duration: .4s;
+            }
+            input[type="button"]:active {
+                background-color: rgba(22, 110, 145, 0.726);
+                transition-duration: .5s;
+            }
+            input[type="text"]{
+                position: absolute;
+                width: 350px;
+                height: 65px;
+                top: -50px;
+                font-size: 50px;
+                font-family: century gothic;
+                background: none;
+                border: none;
+                border-bottom: 3px solid #fff;
+                color: #fff;
+                padding: 10px 10px 20px 10px;
+                transition-duration: .5s;
+            }
+            input[type="text"]:hover{
+                background-color: rgba(73, 23, 23, 0.534);
+                transition-duration: .5s;
+            }
+            
+            input[type="text"]:active{
+                background-color: rgba(138, 31, 31, 0.692);
+                transition-duration: .1s;
+            }
+            .main {
+                position: absolute;
+                left: 500px;
+                top: 180px;
+            }
+            .speceq {
+                width: 170px;
+                height: 70px;
+                background: none;
+                color: #fff;
+                border: none;
+                border-bottom: 2px solid #fff;
+                font-size: 40px;
+                font-family: century gothic;
+                transition-duration: 1s;
+            }
+            .title {
+                cursor: default;
+                position: absolute;
+                top: -70px;
+                left: 480px;
+                font-family: Century Gothic;
+                color: #fff;
+                font-size: 80px;
+                opacity: .7;
+            }
+            
+            .ext {
+                cursor: pointer;
+                position: absolute;
+                top: -4px;
+                left: 503px;
+                font-family: Century Gothic;
+                color: #fff;
+                font-size: 40px;
+                opacity: .7;
+                z-index: 3;
+                transition-duration: .3s;
+            }
+            .ext:hover {
+                transform: rotate(135deg);
+                transition-duration: .3s;
+                transition-delay: .3s;
+            }
+        </style>
+        <script>
+            var a = "";
+
+            function masuk(num) {
+                var b = num;
+                a = a + "" + b;
+                document.getElementById('disp').value=a;
+            }
+            function clr() {
+                a = "";
+                document.getElementById('disp').value=a;
+            }
+            function del() {
+                document.getElementById('disp').value=a.substring(0,a.length-1);
+                a=a.substring(0,a.length-1);
+            }
+            function jum() {
+                document.getElementById('disp').value=eval(a);
+                var b = eval(a);
+                a = b;
+            }
+            function opr(operand) {
+                a = a + operand;
+                document.getElementById('disp').value=a;
+            }
+
+        </script>
+    </head>
+    <body>
+        <p class="ext">+</p>
+        <p class="title"><b>C</b>alculator</p>
+        <div class="main">
+        <form id="text">
+        <table border="0" cellspacing="10px">
+            <tr><td colspan="4"><input type="text" placeholder="Number" id="disp" disabled></td></tr>
+        </form>
+            <tr>
+                <td><input type="button" value="C" id="" class="normal" onclick="clr()"></td>
+                <td><input type="button" value="<" id="" class="normal" onclick="del()"></td>
+                <td><input type="button" value="%" id="" class="normal" onclick="opr('%')"></td>
+                <td><input type="button" value="/" id="" class="normal" onclick="opr('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" id="" class="normal" onclick="masuk(1)"></td>
+                <td><input type="button" value="2" id="" class="normal" onclick="masuk(2)"></td>
+                <td><input type="button" value="3" id="" class="normal" onclick="masuk(3)"></td>
+                <td><input type="button" value="X" id="" class="normal" onclick="opr('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" id="" class="normal" onclick="masuk(4)"></td>
+                <td><input type="button" value="5" id="" class="normal" onclick="masuk(5)"></td>
+                <td><input type="button" value="6" id="" class="normal" onclick="masuk(6)"></td>
+                <td><input type="button" value="-" id="" class="normal" onclick="opr('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" id="" class="normal" onclick="masuk(7)"></td>
+                <td><input type="button" value="8" id="" class="normal" onclick="masuk(8)"></td>
+                <td><input type="button" value="9" id="" class="normal" onclick="masuk(9)"></td>
+                <td><input type="button" value="+" id="" class="normal" onclick="opr('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" id="" class="normal" onclick="masuk(0)"></td>
+                <td><input type="button" value="." id="" class="normal" onclick="opr('.')"></td>
+                <td colspan="2"><input type="button" value="=" id="" class="speceq" onclick="jum()"></td>
+            </tr>
+        </table></div>
+    </body>
+</html>

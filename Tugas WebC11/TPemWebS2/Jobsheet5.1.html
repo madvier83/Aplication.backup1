@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Jobsheet 5</title>
+        <style>
+            body {
+                background-color: rgb(0, 140, 255);
+                color: #fff;
+                font-family: century gothic;
+            }
+            fieldset {
+                width: 600px;
+                height: 570px;
+                border-color: blue;
+            }
+            p {
+                position: relative;
+                padding: -10px 0;
+            }
+            legend {
+                background-color: blue;
+                font-weight: bold;
+                font-size: 30px;
+            }
+            .forma {
+                position: absolute;
+                align-content: center;
+                left: 380px;
+            }
+            input {
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+                border: none;
+                border-bottom: 1px solid #fff;
+                padding: 10px
+            }
+        </style>
+    </head>
+    <body>
+        <form method="GET" action="name" action="./Jobsheet5.1.html" class="forma">
+        <fieldset>
+            <legend>Universitas Patilaan Ikip</legend>
+            <label for="name">Nama</label><br>
+            <input type="text" id="name" name=""><br>
+            <label for="aseek">Asal Sekolah</label><br>
+            <input type="text" id="aseek" name=""><br>
+
+            <p>Pria
+            <input type="radio" name=""><br>
+            <p>Wanita
+            <input type="radio" name="">
+
+            <p>Agama<br>
+            <select aria-placeholder="--PILIH--">
+                    <option value="--PILIH--">--PILIH--</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katholik">Katholik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+            </select><br>
+
+            <p>Nilai<br>
+            <input type="text" placeholder="Matematika" name="">
+            <input type="text" placeholder="Bahasa Indonesia" name="">
+            <input type="text" placeholder="Bahasa Inggris" name=""><br>
+
+            <p>Fakultas Pilihan<br>
+            <select>
+                <option value="--PILIH--">--PILIH--</option>
+                <option value="Fakultas Ilmu Pendidikan">Fakultas Ilmu Pendidikan</option>
+                <option value="Fakultas Pendidikan Bahasa Dan Seni">Fakultas Pendidikan Bahasa Dan Seni</option>
+                <option value="Fakultas Pendidikan Olahraga Dan Kesehatan">Fakultas Pendidikan Olahraga Dan Kesehatan</option>
+                <option value="Fakultas Pendidikan Teknik Dan Kejuruan">Fakultas Pendidikan Teknik Dan Kejuruan</option>
+                <option value="Fakultas Pendidikan Matematika Dan Ilmu Pengetahuan Alam">Fakultas Pendidikan Matematika Dan Ilmu Pengetahuan Alam</option>
+                <option value="Fakultas Pendidikan Ilmu Pengetahuan Sosial">Fakultas Pendidikan Ilmu Pengetahuan Sosial</option>
+                <option value="Fakultas Pendidikan Ekonomi Dan Bisnis">Fakultas Pendidikan Ekonomi Dan Bisnis</option>
+            </select><br>
+
+            <p>Anda Menyetujui Semua Persyaratan Yang Berlaku<br>
+            <input type="checkbox" name="" id="stu">
+            <label for="stu">Setuju</label><br><br><br>
+
+            <input type="submit" id="submit" name="">
+            <input type="button" id="reset" value="Reset" name="">
+        </fieldset>
+        
+        <br>
+        <a href="../TPemweb/jobsheet5.1.html">Back</a>
+        </form>
+    </body>
+</html>

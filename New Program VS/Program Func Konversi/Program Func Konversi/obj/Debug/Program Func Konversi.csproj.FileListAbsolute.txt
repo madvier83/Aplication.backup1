@@ -1,0 +1,6 @@
+D:\New Program\Program Func Konversi\Program Func Konversi\bin\Debug\Program Func Konversi.exe.config
+D:\New Program\Program Func Konversi\Program Func Konversi\obj\Debug\Program Func Konversi.csprojResolveAssemblyReference.cache
+D:\New Program\Program Func Konversi\Program Func Konversi\bin\Debug\Program Func Konversi.exe
+D:\New Program\Program Func Konversi\Program Func Konversi\bin\Debug\Program Func Konversi.pdb
+D:\New Program\Program Func Konversi\Program Func Konversi\obj\Debug\Program Func Konversi.exe
+D:\New Program\Program Func Konversi\Program Func Konversi\obj\Debug\Program Func Konversi.pdb

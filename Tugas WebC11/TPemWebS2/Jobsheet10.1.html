@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Jobsheet 10</title>
+        <style>
+            body {
+                background: linear-gradient(60deg,rgb(3, 121, 231),rgb(0, 245, 204));
+                font-family: century gothic;
+            }
+            td {
+                text-align: center;
+                border: 1px solid #fff;
+            }
+            table {
+                width: 300px;
+                height: 200px;
+                position: relative;
+                top: 50px;
+                left: 470px;
+                border-color: #fff;
+                color: #fff;
+                font-size: 25px
+            }
+            input[type=text] {
+                width: 150px;
+                height: 30px;
+                border: none;
+                border-bottom: 1px solid rgb(255, 255, 255);
+                background: none;
+                color: #fff;
+                text-align: center;
+            }
+            .hitung {
+                position: relative;
+                left: 510px;
+                top: 60px;
+                width: 100px;
+                height: 40px;
+            }
+        </style>
+        <script>
+            function jumlah() {
+                var a = parseInt(document.getElementById('n').value);
+                var b = 1;
+                var text = '';
+
+                for (var x=0; x<a ; x++) {
+                    b = b * (x + 1);
+            }
+            
+                for (var y=1; y<=a ; y++) {
+                    if(y<a){                  
+                        text = text + y + " x ";
+                    }else{                  
+                        text = text + y + " ";
+                    }
+            }
+            
+            document.getElementById('fak').value = text;
+            document.getElementById('jum').value=b;
+        }   
+
+        function reset() {
+            
+            document.getElementById('jum').value='';
+            document.getElementById('fak').value='';
+            document.getElementById('n').value='';
+
+        }
+        </script>
+    </head>
+    <body>
+        <table border="2" cellspacing="0">
+            <tr>
+                <td colspan="2">Perhitungan Faktorial</td>
+            </tr>
+            <tr>
+                <td>N</td>
+                <td>
+                    <input type="text" id="n">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">Hasil</td>
+            </tr>
+            <tr>
+                <td>Faktorial</td>
+                <td>                   
+                    <input type="text" id="fak" disabled>
+                </td>
+            </tr>
+            <tr>
+                <td>Jumlah</td>
+                <td>                   
+                    <input type="text" id="jum" disabled>
+                </td>
+            </tr>
+        </table>
+        <input class="hitung" type="button" id="hitung" value="Hitung" onclick="jumlah()">
+        
+        <input class="hitung" type="button" id="hitung" value="Reset" onclick="reset()">
+
+        
+        <br>
+        <a href="../TPemweb/jobsheet5.1.html">Back</a>
+    </body>
+</html>
